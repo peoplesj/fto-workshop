@@ -38,6 +38,7 @@ export const RequestFTO = DefineFunction({
 });
 
 // Send a message constructed with Block Kit message to the manager
+// Block Kit Builder: https://app.slack.com/block-kit-builder
 export default SlackFunction(
   RequestFTO,
   async ({ inputs, client }) => {
